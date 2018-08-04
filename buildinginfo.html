@@ -1,0 +1,317 @@
+<html>
+<body>
+<head>
+  <style>
+
+      .header {
+        overflow: hidden;
+        background-color: #0058A0;
+        padding: 20px 10px;
+        align: center;
+      }
+
+      .top {
+        float: center;
+        color: #FDBA12;
+        text-align: justify;
+        padding: 25px;
+        text-decoration: none;
+        font-size: 100px;
+        line-height: 155px;
+        border-radius: 4px;
+        font-family: cursive;
+        font-weight: bold;
+
+      }
+
+      .header a {
+        float: center;
+        color: rgb(251, 251, 251);
+        text-align: justify;
+        text-decoration: none;
+        font-size: 45px;
+        line-height: 55px;
+        border-radius: 4px;
+        font-family: arial;
+        }
+
+    .header a:hover{
+      background-color: #93cc28;
+      color: white;
+    }
+    .header a:active{
+      background-color: #93cc28;
+      color: white;
+    }
+    .header-center{
+      float: justify;
+    }
+
+    @media screen and (max-width: 500px){
+      .header a {
+        float: none;
+        display: block;
+        text-align: justify;
+
+      }
+      .header-right{
+        float:none;
+      }
+    }
+
+    h1{
+      font-family: helvetica;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: helvetica;
+      font-weight: bold;
+      text-align: left;
+
+    }
+
+    .container1 {
+      background-color: #CCCCCC;
+      margin: 0 auto;
+      padding: 150px;
+    }
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: 0 auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #ff0000;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #FDBA12;
+    }
+
+    .text{
+      color: #ff0000;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      font-family: helvetica;
+    }
+
+    .numbertext {
+      color: #FDBA12;
+      font-size: 25px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #ff0000;
+      border-radius: 5%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover{
+      background-color: #FDBA12;
+    }
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    .footer {
+      max-width: 300%;
+    }
+
+    p {
+      font-family: garamond;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .footer img{
+      width:100%
+    }
+
+    .container2 {
+      margin: 0 auto;
+      padding: 30px;
+    }
+</style>
+    </head>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides (n) {
+      showSlides (slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSildes(slideIndex=n);
+    }
+
+    function showSlides(n){
+      var i;
+      var slides=
+      document.getElementsByClassName("mySlides");
+      var dots=document.getElementsByClassName("dot");
+      if (n>sildes.length) {slideIndex=1}
+      if (n<1) {slideIndex=slides.length}
+      for (i=0; i<slides.length; i++) {
+        slides[i].style.display="none";
+      }
+      for (i=0; i<dots.length; i++){
+        dots[i].className=dots[i].className.replace("active", "");
+      }
+      slides[slideIndex-1].style.display="block";
+      dots[slideIndex-1].className += "active";
+    }
+    </script>
+  </style>
+</head>
+
+
+<div class="header">
+  <div class="top">
+    <img src="thelogo1.jpg"/><class="logo">Old Buildings Gallery</a>
+  </div>
+
+  <div class="header-right">
+    <a class="active" href="#about">ABOUT</a>
+    <a class="active" href="#history">HISTORY</a>
+    <a class="active" href="#volunteer">VOLUNTEER</a>
+    <a class="active" href="#gallery">GALLERY</a>
+    <a class="active" href="#contact">CONTACT</a>
+  </div>
+</div>
+<h1> Building Info</h1>
+
+<em><h2>Introduction</h2></em>
+<div class="container1">
+<p>Age: XXX
+Founding Time: XXXX
+Founder: XXX XXX
+History:-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum auctor erat. Maecenas tempus at justo et dapibus. Phasellus ut dui non diam euismod convallis at in mi. Sed vehicula id arcu eget semper. Integer at risus ac nibh posuere tempor. Sed vel viverra dui, a vehicula lacus. Ut tincidunt lectus eu urna placerat, non pellentesque tortor dictum. Sed felis velit, dapibus non sollicitudin a, ornare eu libero. Sed volutpat non turpis eu finibus. Suspendisse sit amet venenatis turpis.</p>
+
+
+
+</div>
+
+<em><h2>Images</h2></em>
+<div class="container1">
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1/5</div>
+      <img src="slideshow1.jpg"/> <style="width:100%"> </style>
+      <div class="text">Caption Text</div>
+    </div>
+  </div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"> 2/5</div>
+    <img src="slideshow2.jpg"/> <style="width:100%"></style>
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 3/5</div>
+    <img src="slideshow3.jpg"/> <style="width:100%"></style>
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 4/5</div>
+    <img src="slideshow1.jpg"/> <style="width:100%"></style>
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 5/5</div>
+    <img src="slideshow2.jpg"/> <style="width:100%"></style>
+    <div class="text">Caption Text</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides (-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+<em><h2>Current Status</em></h2>
+<div class="container1">
+ <img src="slideshow3.jpg"/>
+ <img src="slideshow2.jpg"/>
+ <img src="slideshow3.jpg"/>
+
+</div>
+
+<em><h2>Volunteer</em><h2>
+  <div class="container1">
+    <img src="slideshow3.jpg"/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum auctor erat. Maecenas tempus at justo et dapibus. Phasellus ut dui non diam euismod convallis at in mi. Sed vehicula id arcu eget semper. Integer at risus ac nibh posuere tempor. Sed vel viverra dui, a vehicula lacus. Ut tincidunt lectus eu urna placerat, non pellentesque tortor dictum. Sed felis velit, dapibus non sollicitudin a, ornare eu libero. Sed volutpat non turpis eu finibus. Suspendisse sit amet venenatis turpis.</p>
+
+
+  </div>
+
+<em><h3>About Us</em></h2>
+<div class="container2">
+  <p>A volunteer organization that protects the old buildings in the city of Xiamen, belongs to the culture ministry.</p>
+</div>
+<div class="footer">
+<img src="thefooter1.jpg"/>
+</div>
+</body>
+</html>
